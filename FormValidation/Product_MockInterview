@@ -1,0 +1,16 @@
+This is the quesiton asked in Easy level mock interview
+ Create a product app, where there will be 7 fields
+Mobile no -
+Date of delivery -
+Name of the product:
+Description:
+Actual Cost : (in INR)
+Discount: (in %)
+In stock : true/false
+
+Calculate the discounted price and show the details in the list along with the discounted price
+
+Validation
+1.Actual cost and name of the product and mobile no field can not be empty
+2.Actual cost and discount can’t be a string and it can’t take negative values and zero value
+3. mobile no should be of 10 digits
