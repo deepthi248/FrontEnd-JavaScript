@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductMockInterview</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="product_form">
+        <!-- Mobile Number -->
+        <div class="mobileNumber">
+            <label for="mobile">Mobile Number:</label>
+            <input id="mobileNumber" class="input_item" type="number" placeholder="Mobile Number" pattern="/^[7-9]\d{9}"
+                required>
+        </div>
+        <!-- Date of Delivery -->
+        <div class="dod">
+            <label for="DateOfdeliver">Date Of Delivery:</label>
+            <input type="date" id="dod" class="input_item" placeholder="Date of Delivery">
+        </div>
+        <!-- Name of the Product -->
+        <div class="name">
+            <label for="name">Name of the Product:</label>
+            <input type="text" id="name" class="input_item" placeholder="Name of the Product" required>
+        </div>
+        <!-- Description: -->
+        <div class="description">
+            <label for="Description">Description:</label>
+            <textarea id="description" class="input_item" placeholder="Description of Product"> </textarea>
+        </div>
+
+        <!-- Actual Cost: -->
+        <div class="actualCost">
+            <label for="ActualCost">Actual Cost:</label>
+            <input type="number" id="ActualCost" class="input_item" placeholder="Actual Cost of Product"
+                pattern="/^[0-9]+/" min="0" required>
+        </div>
+        <!--Discount-->
+        <div class="discount">
+            <label for="discount">Discount:</label>
+            <input type="number" id="discount" class="input_item" placeholder="Discount on  Product" pattern="/^[0-9]+/"
+                min="1">
+        </div>
+        <!-- In Stock -->
+        <div class="inStock">
+            <label for="instock">In Stock: </label>
+            <select id="instock" class="input_item">
+                <option>Yes</option>
+                <option>No</option>
+            </select>
+        </div>
+        <div class="button">
+            <button type="submit" id="submit" onclick="validate()">Submit</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
